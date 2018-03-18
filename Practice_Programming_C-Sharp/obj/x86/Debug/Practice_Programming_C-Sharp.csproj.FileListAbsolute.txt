@@ -2,3 +2,7 @@ D:\VISUAL_STUDIO\ProjectsOfC-Sharp\Practice_Programming_C-Sharp\Practice_Program
 D:\VISUAL_STUDIO\ProjectsOfC-Sharp\Practice_Programming_C-Sharp\Practice_Programming_C-Sharp\bin\Debug\Practice_Programming_C-Sharp.pdb
 D:\VISUAL_STUDIO\ProjectsOfC-Sharp\Practice_Programming_C-Sharp\Practice_Programming_C-Sharp\obj\x86\Debug\Practice_Programming_C-Sharp.exe
 D:\VISUAL_STUDIO\ProjectsOfC-Sharp\Practice_Programming_C-Sharp\Practice_Programming_C-Sharp\obj\x86\Debug\Practice_Programming_C-Sharp.pdb
+D:\GitHubRepository\Practice_Programming_C-\Practice_Programming_C-Sharp\obj\x86\Debug\Practice_Programming_C-Sharp.exe
+D:\GitHubRepository\Practice_Programming_C-\Practice_Programming_C-Sharp\obj\x86\Debug\Practice_Programming_C-Sharp.pdb
+D:\GitHubRepository\Practice_Programming_C-\Practice_Programming_C-Sharp\bin\Debug\Practice_Programming_C-Sharp.exe
+D:\GitHubRepository\Practice_Programming_C-\Practice_Programming_C-Sharp\bin\Debug\Practice_Programming_C-Sharp.pdb
