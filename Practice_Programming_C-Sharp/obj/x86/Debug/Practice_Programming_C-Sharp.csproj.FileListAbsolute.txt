@@ -6,3 +6,4 @@ D:\GitHubRepository\Practice_Programming_C-\Practice_Programming_C-Sharp\obj\x86
 D:\GitHubRepository\Practice_Programming_C-\Practice_Programming_C-Sharp\obj\x86\Debug\Practice_Programming_C-Sharp.pdb
 D:\GitHubRepository\Practice_Programming_C-\Practice_Programming_C-Sharp\bin\Debug\Practice_Programming_C-Sharp.exe
 D:\GitHubRepository\Practice_Programming_C-\Practice_Programming_C-Sharp\bin\Debug\Practice_Programming_C-Sharp.pdb
+D:\GitHubRepository\Practice_Programming_C-\Practice_Programming_C-Sharp\obj\x86\Debug\Practice_Programming_C-Sharp.csprojResolveAssemblyReference.cache
