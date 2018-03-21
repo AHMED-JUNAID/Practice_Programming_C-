@@ -1,4 +1,4 @@
-﻿//nullable type in c#
+﻿//data type conversion in c#
 
 using System;
 using System.Collections.Generic;
@@ -11,35 +11,45 @@ namespace Practice_Programming_C_Sharp
     {
         static void Main(string[] args)
         {
-            //now value type can declared as nullable using ( ? ) 
+            /*
+             * NOTE:
+             * implicit conversion can be done automatically by Compiler 
+             */
 
-            bool? areYouMajor = null;
+            float fNumber = 123.45f;
+            float fNumber1 = 456.22f;
+            int iNumber;
+            int iNumber1;
 
-            if(areYouMajor == true)
-                Console.WriteLine("true");
-            else if (areYouMajor == false)
-                Console.WriteLine("false");
+            Console.WriteLine("\nactual value before using cast operator : " + fNumber);
+            //use of cast opertaor () for conversion
+            //does not throw exception 
+            iNumber = (int)fNumber;
+            Console.WriteLine("\nvalue after using cast operator : " + iNumber);
+
+            Console.WriteLine("\nactual value before using convert class : " + fNumber1);
+            //use of convert class for conversion
+            //this throws exception if value is large enough
+            iNumber1 = Convert.ToInt32(fNumber1);
+            Console.WriteLine("\nvalue after using convert class : " + iNumber1);
+
+            //use of parse for conversion
+            //cannot tell about conversion success
+            string sNumber = "999";
+            int iNumber3 = int.Parse(sNumber);
+            Console.WriteLine("\nvalue after using parse : " + iNumber3);
+
+            //use of try-parse for conversion
+            //tell about conversion success
+            string sNumber1 = "755";
+            int iNumber4;
+
+            if (int.TryParse(sNumber1, out iNumber4))
+                Console.WriteLine("\nafter successfull conversion : " + iNumber4);
             else
-                Console.WriteLine("null");
+                Console.WriteLine("\nstring does not contain valid number");
 
-            Console.WriteLine("\n\n");
-
-            //use of nullable coalescing operator ( ?? ) 
-
-            int? ticketsOnSale = 10;
-            int availableTickets = ticketsOnSale ?? 0;  //effiecient use of ( ?? ) instead of writing more code 
-
-            // or
-
-            //int availableTickets;
-
-            //if (ticketsOnSale == null)
-            //    availableTickets = 0;
-            //else
-            //    availableTickets = ticketsOnSale.Value;
-
-            Console.WriteLine("available tickets = {0}", availableTickets);
-            Console.WriteLine("\n\n");
+            Console.WriteLine("\n");
         }
     }
 }
