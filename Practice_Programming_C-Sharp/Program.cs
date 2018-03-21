@@ -1,4 +1,4 @@
-﻿//reading and writing from console
+﻿//built-in data types
 
 using System;
 using System.Collections.Generic;
@@ -11,17 +11,17 @@ namespace Practice_Programming_C_Sharp
     {
         static void Main(string[] args)
         {
-            //write to console
-            Console.Write("Enter your Name : ");
-            string userName = Console.ReadLine(); //read from console
+            bool isTrueOrFalse = true; //valid
 
-            //write to console using concatination
-            Console.WriteLine("\n\tHello " + userName);
+            //bool isBoolHoldNumericValue = 0; //invalid bcz bool contain either true or false
 
-            //write to console using place holder syntax
-            Console.WriteLine("\n\tHELLO {0}", userName);
+            int i = 0;
 
-            Console.WriteLine();
+            int minValueOfInt = int.MinValue; //property of int (MinValue)
+            int maxValueOfInt = int.MaxValue; //property of int (MaxValue)
+
+            Console.WriteLine("min value = {0}", minValueOfInt);
+            Console.WriteLine("max value = {0}", maxValueOfInt);
         }
     }
 }
