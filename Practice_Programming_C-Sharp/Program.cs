@@ -1,4 +1,4 @@
-﻿//built-in data types
+﻿//string type in c#
 
 using System;
 using System.Collections.Generic;
@@ -11,17 +11,12 @@ namespace Practice_Programming_C_Sharp
     {
         static void Main(string[] args)
         {
-            bool isTrueOrFalse = true; //valid
+            //without verbatim literal 
+            string path = "c:\\something\\something else\\etc.";
 
-            //bool isBoolHoldNumericValue = 0; //invalid bcz bool contain either true or false
-
-            int i = 0;
-
-            int minValueOfInt = int.MinValue; //property of int (MinValue)
-            int maxValueOfInt = int.MaxValue; //property of int (MaxValue)
-
-            Console.WriteLine("min value = {0}", minValueOfInt);
-            Console.WriteLine("max value = {0}", maxValueOfInt);
+            //with verbatim literal readibility increases
+            string path1 = @"c:\something\something else\etc.";
+            
         }
     }
 }
