@@ -1,4 +1,4 @@
-﻿//string type in c#
+﻿//nullable type in c#
 
 using System;
 using System.Collections.Generic;
@@ -11,12 +11,35 @@ namespace Practice_Programming_C_Sharp
     {
         static void Main(string[] args)
         {
-            //without verbatim literal 
-            string path = "c:\\something\\something else\\etc.";
+            //now value type can declared as nullable using ( ? ) 
 
-            //with verbatim literal readibility increases
-            string path1 = @"c:\something\something else\etc.";
-            
+            bool? areYouMajor = null;
+
+            if(areYouMajor == true)
+                Console.WriteLine("true");
+            else if (areYouMajor == false)
+                Console.WriteLine("false");
+            else
+                Console.WriteLine("null");
+
+            Console.WriteLine("\n\n");
+
+            //use of nullable coalescing operator ( ?? ) 
+
+            int? ticketsOnSale = 10;
+            int availableTickets = ticketsOnSale ?? 0;  //effiecient use of ( ?? ) instead of writing more code 
+
+            // or
+
+            //int availableTickets;
+
+            //if (ticketsOnSale == null)
+            //    availableTickets = 0;
+            //else
+            //    availableTickets = ticketsOnSale.Value;
+
+            Console.WriteLine("available tickets = {0}", availableTickets);
+            Console.WriteLine("\n\n");
         }
     }
 }
